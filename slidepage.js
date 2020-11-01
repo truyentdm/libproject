@@ -24,7 +24,8 @@ $(document).ready(function(){
 	//tu tao control 1 2 3 4
 	for(var i=0;i<=total;i++){
 		y= i+1;
-		var tmp = "<li><a stt=\""+i+"\">"+y+"</a></li>";
+		//var tmp = "<li><a stt=\""+i+"\">"+y+"</a></li>";
+		var tmp = "<span><a stt=\""+i+"\">"+y+"</a></span>";
 		$('.control').append(tmp);
 	}
 	//control dang active
