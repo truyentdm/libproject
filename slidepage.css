@@ -12,12 +12,15 @@
 }
 .next,.prev{
 	position: absolute;
-	bottom: 0px;
+	bottom: -10px;
 	cursor: pointer;
 	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
 }
 .next:hover,.prev:hover{
-	border: 1px solid #ccc;
+	background: #2fa3db;
+	color: #fff;	
 }
 .next{
 	right: 10px;
