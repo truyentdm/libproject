@@ -1,5 +1,5 @@
 #wrapper{width: 960px;margin: 0 auto;}
-#wp_slide{ width: 660px;margin: 0 auto; position: relative;}
+#wp_slide{ width: 100%;margin: 0 auto; position: relative;}
 #wp_slide img{
 	max-width:100%; 
 }
@@ -28,8 +28,9 @@
 	left: 40%;
 
 }
-.control li{float: left; cursor: pointer;}
-.control li a{padding: 10px; border: 1px solid #ccc;display: block;}
+/*.control li{float: left; cursor: pointer;}
+.control li a{padding: 10px; border: 1px solid #ccc;display: block;}*/
+.control span a{padding: 10px; border: 1px solid #ccc;display: inline-block;cursor: pointer;}
 .active{
 	background: #2fa3db;
 	color: #fff;
