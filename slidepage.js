@@ -19,7 +19,7 @@ $(document).ready(function(){
 		}
 	}
 	//set height
-	$('#wp_slide article').height(than_height+"px");
+	$('#wp_slide article').height(than_height+45+"px");
 
 	//tu tao control 1 2 3 4
 	for(var i=0;i<=total;i++){
