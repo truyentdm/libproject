@@ -6,12 +6,15 @@
 #wp_slide article{
 	width:100%; 
 }
+.wp_control{
+	position: relative;
+	
+}
 .next,.prev{
 	position: absolute;
 	bottom: 0px;
 	cursor: pointer;
 	padding: 10px;
-
 }
 .next:hover,.prev:hover{
 	border: 1px solid #ccc;
