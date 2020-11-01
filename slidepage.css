@@ -1,0 +1,42 @@
+#wrapper{width: 960px;margin: 0 auto;}
+#wp_slide{ width: 660px;margin: 0 auto; position: relative;}
+#wp_slide img{
+	max-width:100%; 
+}
+#wp_slide article{
+	width:100%; 
+}
+.next,.prev{
+	position: absolute;
+	top: 100%;
+	cursor: pointer;
+	padding: 10px;
+
+}
+.next:hover,.prev:hover{
+	border: 1px solid #ccc;
+}
+.next{
+	right: 10px;
+}
+.prev{
+	left: : 10px;
+}
+.control{
+	position: absolute;
+	bottom: -40px;
+	left: 40%;
+
+}
+.control li{float: left; cursor: pointer;}
+.control li a{padding: 10px; border: 1px solid #ccc;display: block;}
+.active{
+	background: #2fa3db;
+	color: #fff;
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
