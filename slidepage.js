@@ -27,6 +27,18 @@ $(document).ready(function(){
 	function setHeightArticle(than_height){
 		$('.wp_s_content').height(than_height+45+"px");
 	}
+	function showButton(visible){
+		if(visible == 0){
+			$('.prev').hide();
+		}else{
+			$('.prev').show();
+		}
+		if(visible == total){
+			$('.next').hide();
+		}else{
+			$('.next').show();
+		}
+	}
 	//set height
 	setHeightPage();
 	setHeightArticle(than_height)
@@ -44,12 +56,14 @@ $(document).ready(function(){
 		$('.control').append(tmp);
 	}
 	//control dang active
+	showButton(visible)
 	$('.control a').eq(visible).addClass('active');
 	function showarticle(visible){
 		$('#wp_slide article').hide();
 		$('#wp_slide article').eq(visible).show();
 		$('.control a').removeClass('active');
 		$('.control a').eq(visible).addClass('active');
+		showButton(visible);
 	}
 
 	//set time
@@ -72,7 +86,7 @@ $(document).ready(function(){
 		
 		 visible++;
 		if(visible>total){
-			visible = 0;
+			visible = total;
 		}
 		showarticle(visible);
 
@@ -84,7 +98,7 @@ $(document).ready(function(){
 		
 		 visible--;
 		if(visible<0){
-			visible = total;
+			visible = 0;
 		}
 
 		showarticle(visible);
