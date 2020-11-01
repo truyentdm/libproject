@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	var than_height = $('#wp_slide').find('article').eq(0).height();
+	
+	var than_height = 0;
 	//thiet lap gia tri mac dinh
 	$('#wp_slide').find('article').hide();
 	$('#wp_slide').find('article').eq(0).show();
@@ -13,14 +14,28 @@ $(document).ready(function(){
 		if($('#wp_slide').find('article').eq(i).is(':visible')){
 			visible = i;
 		}
-		var cur_height = $('#wp_slide').find('article').eq(i).height();
-		if(than_height < cur_height){
-			than_height = cur_height;
+	}
+	function setHeightPage(){
+		than_height = $('#wp_slide').find('article').eq(0).height();
+		for(var i =0 ;i<=total;i++){
+			var cur_height = $('#wp_slide').find('article').eq(i).height();
+			if(than_height < cur_height){
+				than_height = cur_height;
+			}
 		}
 	}
+	function setHeightArticle(than_height){
+		$('.wp_s_content').height(than_height+45+"px");
+	}
 	//set height
-	$('#wp_slide article').height(than_height+45+"px");
-
+	setHeightPage();
+	setHeightArticle(than_height)
+	window.onresize = function(event) {
+		setHeightPage();
+		console.log("resite")
+		setHeightArticle(than_height)
+		//$('#wp_slide article').height(than_height+45+"px");
+	};
 	//tu tao control 1 2 3 4
 	for(var i=0;i<=total;i++){
 		y= i+1;
