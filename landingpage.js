@@ -13,7 +13,7 @@ function addCss(idClass,objCss){
 	$(idClass).css(objCss);
 }
   	
-function createLandingPage(custom){
+function createLandingPage(custom,lineCss){
 	if(typeof custom == "object"){
 		for (const property in custom) {
 			$(property).addClass(custom[property]);
