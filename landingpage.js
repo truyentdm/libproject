@@ -25,5 +25,8 @@ function createLandingPage(custom,lineCss){
 		$("#footer-wrapper").addClass('hide');
 		$("#main-wrapper").addClass("fullsize");
 		$(".post-header").addClass('hide');
+		
+		$(".post-content-wrap").addClass('padding0');
+		$(".static_page .item-post .post-body").addClass('padding0');
 	}
  }
