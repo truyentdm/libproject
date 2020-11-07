@@ -37,7 +37,7 @@
     padding-bottom: 70px;
     padding-top: 70px;
     background: url(https://ssl.gstatic.com/atari/images/vision-header.jpg);
-    background-size: cover;
+    background-size: cover !important;
       display: table;
       position: relative;
       table-layout: fixed;
@@ -59,7 +59,7 @@
       padding-bottom: 70px;
     padding-top: 70px;
     background: url(https://ssl.gstatic.com/atari/images/vision-header.jpg);
-    background-size: cover;
+    background-size: cover !important;
       display: table;
       position: relative;
       table-layout: fixed;
