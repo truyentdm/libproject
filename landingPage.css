@@ -11,7 +11,7 @@
   width: 100%;
 }
 .transparent{
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .padding10{
   padding: 10px;
