@@ -20,7 +20,7 @@
       position: relative;
       table-layout: fixed;
       width: 100%;
-    color: black;
+    color: black !important;
     font-weight: bold;
     font-size: 35px;
     text-align: center;
@@ -29,7 +29,7 @@
     display: table-cell;
       vertical-align: middle;
       width: 100%;
-      color: black;
+      color: black !important;
       font-weight: bold;
       font-size: 35px;
 }
@@ -42,7 +42,7 @@
       position: relative;
       table-layout: fixed;
       width: 100%;
-    color: white;
+    color: white !important;
     font-weight: bold;
     font-size: 35px;
     text-align: center;
@@ -51,7 +51,7 @@
     display: table-cell;
       vertical-align: middle;
       width: 100%;
-      color: white;
+      color: white !important;
       font-weight: bold;
       font-size: 35px;
 }
@@ -66,7 +66,7 @@
       width: 100%;
     text-align: center;
     height: 100vh;
-      color: white;
+      color: white !important;
     font-weight: bold;
     font-size: 35px;
 
@@ -75,7 +75,7 @@
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    color: white;
+    color: white !important;
     font-weight: bold;
     font-size: 35px;
 }
