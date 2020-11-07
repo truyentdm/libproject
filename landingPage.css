@@ -13,6 +13,72 @@
 .transparent{
   background-color: transparent !important;
 }
+.lp-banners-white{
+    padding-bottom: 70px;
+    padding-top: 70px;
+      display: table;
+      position: relative;
+      table-layout: fixed;
+      width: 100%;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+  .lp-banners-white>h3{
+    display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      color: black;
+      font-weight: bold;
+      font-size: 35px;
+}
+.lp-banners{
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background: url(https://ssl.gstatic.com/atari/images/vision-header.jpg);
+    background-size: cover;
+      display: table;
+      position: relative;
+      table-layout: fixed;
+      width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+.lp-banners>h3{
+    display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      color: white;
+      font-weight: bold;
+      font-size: 35px;
+}
+.lp-cover{
+      padding-bottom: 70px;
+    padding-top: 70px;
+    background: url(https://ssl.gstatic.com/atari/images/vision-header.jpg);
+    background-size: cover;
+      display: table;
+      position: relative;
+      table-layout: fixed;
+      width: 100%;
+    text-align: center;
+    height: 100vh;
+      color: white;
+    font-weight: bold;
+    font-size: 35px;
+
+}
+.lp-cover>h3{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
 .padding10{
   padding: 10px;
 }
